@@ -4,13 +4,15 @@ class LocationCard extends Component {
   render() {
     return (
       <div className="card">
-          <div className="card-content">
-            <h2>Place: <span className="card-petname">{this.props.location.name}</span></h2>
-            <p>Id: {this.props.location.id}</p>
-          </div>
+        <div className="card-content">
+
+          <h3>Name: <b>{this.props.location.name}</b></h3>
+          <p>Title: {this.props.location.id}</p>
+          <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Discharge</button>
+        </div>
       </div>
     );
   }
-
 }
+
 export default LocationCard;

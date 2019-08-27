@@ -35,5 +35,33 @@ render(){
         )
       }
 
+      deleteLocation = id => {
+        LocationManager.delete(id)
+        .then(() => {
+          LocationManager.getAll()
+          .then((newLocations) => {
+            this.setState({
+                locations: newLocations
+            })
+          })
+        })
+      }
+
+      render(){
+        console.log("AnimalList: Render");
+
+        return(
+          <div className="container-cards">
+            {this.state.locations.map(location =>
+              <LocationCard
+                key={location.id}
+                location={location}
+                deleteLocation={this.deleteLocation}
+              />
+            )}
+          </div>
+        )
+
     }
+  }
 export default LocationList

@@ -1,27 +1,44 @@
-
-
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Decker", "breed": "German Sheperd" },
-        { "id": 3, "name": "Esme", "breed": "Pitbull" }
-    ],
-
-    "employees": [
-        {"id":1, "name": "Michael", "title": "Shitboi"},
-        {"id":2, "name": "Ellie", "title": "Meme Queen"},
-        {"id":3, "name": "Bennett", "title": "Dog Walker"}
-
-    ],
-
-    "owner": [
-        {"id":1, "name": "Michael", "title": "CEO"},
-        {"id":2, "name": "James", "title": "CIO"}
-     ],
-
-     "locations": [
-         {"id":1, "name": "Dallas, TX"},
-         {"id":2, "name": "Nashville, TN"}
-     ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 2,
+      "name": "Decker",
+      "breed": "German Sheperd"
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Michael",
+      "title": "Shitboi"
+    },
+    {
+      "id": 2,
+      "name": "Ellie",
+      "title": "Meme Queen"
+    }
+  ],
+  "owner": [
+    {
+      "id": 1,
+      "name": "Michael",
+      "title": "CEO"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Dallas, TX"
+    }
+  ]
 }
-

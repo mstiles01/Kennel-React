@@ -31,9 +31,40 @@ render(){
         )}
       </div>
     )
+        }
+     deleteOwner= id => {
+      OwnerManager.delete(id)
+      .then(() => {
+        OwnerManager.getAll()
+        .then((newOwner) => {
+          this.setState({
+              owner: newOwner
+          })
+        })
+      })
+    }
+    render(){
+      console.log("AnimalList: Render");
+
+      return(
+        <div className="container-cards">
+          {this.state.owner.map(owner =>
+            <OwnerCard
+              key={owner.id}
+              owner={owner}
+              deleteOwner={this.deleteOwner}
+            />
+          )}
+        </div>
+      )
+    }
+
   }
 
-}
+
+
+
+
 
 
 export default OwnerList
