@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Home from './Home/Home'
 import AnimalList from './animal/AnimalList'
 //only include these once they are built - previous practice exercise
-import LocationCard from './Location/LocationCard'
+import LocationList from './Location/LocationList'
 import EmployeeList from './Employee/EmployeeList'
 import OwnerList from './Owner/OwnerList'
 
@@ -20,7 +20,7 @@ class ApplicationViews extends Component {
           return <AnimalList />
         }} />
         <Route path="/locations/" render={(props) => {
-          return <LocationCard />
+          return <LocationList />
         }} />
   <Route path="/employees/" render={(props) => {
           return <EmployeeList />

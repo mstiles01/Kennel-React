@@ -7,9 +7,6 @@
         { "id": 3, "name": "Esme", "breed": "Pitbull" }
     ],
 
-    "locations": [
-        {"id":1, "address": "Nashville", "city": "Dallas"}
-    ],
     "employees": [
         {"id":1, "name": "Michael", "title": "Shitboi"},
         {"id":2, "name": "Ellie", "title": "Meme Queen"},
@@ -18,7 +15,13 @@
     ],
 
     "owner": [
-        {"id":1, "name": "Michael", "title": "CEO"}
-    ]
+        {"id":1, "name": "Michael", "title": "CEO"},
+        {"id":2, "name": "James", "title": "CIO"}
+     ],
+
+     "locations": [
+         {"id":1, "name": "Dallas, TX"},
+         {"id":2, "name": "Nashville, TN"}
+     ]
 }
 
