@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import NavBar from "./nav/NavBar"
 import ApplicationViews from "./ApplicationViews"
 
-import "./Kennel.css"
+import "./Animal.css"
 
 class Kennel extends Component {
   render() {
